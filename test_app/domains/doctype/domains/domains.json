@@ -1,9 +1,19 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "test_app.api.execute_function",
+   "action_type": "Server Action",
+   "label": "Fetch Whois"
+  },
+  {
+   "action": "test_app.api.execute_buy_function",
+   "action_type": "Server Action",
+   "label": "Buy Domain"
+  }
+ ],
  "allow_rename": 1,
  "autoname": "field:domain_name",
  "creation": "2022-11-27 02:13:18.843752",
- "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -11,7 +21,8 @@
   "domain_name",
   "status",
   "whois_data",
-  "registrar_name"
+  "registrar_name",
+  "amended_from"
  ],
  "fields": [
   {
@@ -42,11 +53,20 @@
    "in_standard_filter": 1,
    "label": "Registrar Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "domains",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-27 03:17:44.370547",
+ "modified": "2022-11-27 23:26:51.828132",
  "modified_by": "Administrator",
  "module": "domains",
  "name": "domains",
@@ -66,6 +86,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
