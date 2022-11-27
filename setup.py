@@ -9,7 +9,7 @@ from test_app import __version__ as version
 setup(
 	name="test_app",
 	version=version,
-	description="App fot Testing",
+	description="App for Testing",
 	author="Amit Kumar",
 	author_email="amit@worf.in",
 	packages=find_packages(),
