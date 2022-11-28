@@ -4,7 +4,7 @@ from frappe.utils import now
 @frappe.whitelist()
 def execute_function(*args,**kwargs):
     """
-    This fonction will be executed when the Execute Action Button will be clicked
+    This function will be executed when the Execute Action Button will be clicked
     """
     whois = now()
     
